@@ -1,6 +1,8 @@
 body {
-    background: #eee;
+    font-family: Arial;
+    background-color: #eee;
     margin: 0 20%;
+    padding: 40px 0
 }
 
 .top {
@@ -24,4 +26,42 @@ a {
     color: #6b1d1d;
     font-size: 18px;
     font-weight: bold;
+}
+
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+span {
+    color: blue;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+section,
+header {
+    padding: 10px 60px 20px 40px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li {
+    margin-bottom: 15px;
 }
