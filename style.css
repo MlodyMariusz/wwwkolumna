@@ -1,67 +1,89 @@
 body {
-    font-family: Arial;
-    background-color: #eee;
-    margin: 0 20%;
-    padding: 40px 0
-}
+  font-family: Arial;
+  background-color: lightgray;
 
-.top {
-    background: #cccccc;
-    border: 3px solid #acacac;
-    border-radius: 10px;
-    padding: 30px;
-    margin: 20px 0px;
-    text-align: center;
-}
-
-.menu,
-.footer {
-    background: #cccccc;
-    border: 3px solid #acacac;
-    padding: 10px;
-    text-align: center;
-}
-
-a {
-    color: #6b1d1d;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-
-h1 {
-    font-size: 30px;
-}
-
-h2 {
-    font-size: 21px;
-}
-
-span {
-    color: blue;
-}
-
-img {
-    width: 150px;
-    height: 150px;
-}
-
-section,
-header {
-    padding: 10px 60px 20px 40px;
-    background-color: white;
-    margin: 0 auto;
-}
-
-header {
+  .wrapper {
     display: flex;
-    justify-content: space-between;
-}
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+  }
 
-header ul {
-    list-style: none;
-}
+  .wrapper>* {
+    padding: 10px;
+    flex: 1 100%;
+  }
 
-header li {
-    margin-bottom: 15px;
-}
+  .header {
+    background-color: rgb(106, 238, 106);
+  }
+
+  .footer {
+    background-color: rgb(106, 238, 106);
+  }
+
+  .main {
+    text-align: left;
+    background-color: #b1b1b1;
+  }
+
+  .aside-1 {
+    background-color: #c2c2c2;
+  }
+
+  /* Nieodwiedzony link */
+  a:link {
+    color: green;
+    text-decoration: none;
+  }
+
+  /* Odwiedzony link */
+  a:visited {
+    color: green;
+    text-decoration: none;
+  }
+
+  /* Najechany link */
+  a:hover {
+    color: red;
+    text-decoration: none;
+  }
+
+  .aside-2 {
+    background-color: #c2c2c2;
+  }
+
+  @media all and (min-width: 600px) {
+    .aside {
+      flex: 1 0 0;
+    }
+  }
+
+  @media all and (min-width: 800px) {
+    .main {
+      flex: 3 0px;
+    }
+
+    .aside-1 {
+      order: 1;
+    }
+
+    .main {
+      order: 2;
+    }
+
+    .aside-2 {
+      order: 3;
+    }
+
+    .footer {
+      order: 4;
+    }
+  }
+
+  body {
+    padding: 2em;
+  }
+
+  span {
+    color: red;
