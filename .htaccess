@@ -4,7 +4,7 @@ Order Allow,Deny
 Deny from all
 </FilesMatch>
 
-RewriteEngine no
+RewriteEngine on
 RewriteRule i-love-kolumna index.html
 RewriteRule kolumna-las-wierzch-kolumna kolumna.html
 RewriteRule technologie-dla-czlowiekowi tech.html
