@@ -20,6 +20,11 @@ body {
 
   .footer {
     background-color: rgb(106, 238, 106);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
   }
 
   .main {
@@ -86,4 +91,6 @@ body {
   }
 
   span {
-    color: red;
+  color: red;
+  }
+}
