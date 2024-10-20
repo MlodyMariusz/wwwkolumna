@@ -1,97 +1,48 @@
 body {
   font-family: Arial;
   background-color: lightgray;
+  text-align: center;
+}
 
-  .wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    font-weight: bold;
-    text-align: center;
-  }
+.baner {
+  background-color: rgb(106, 238, 106);
+  padding: 2px;
 
-  .wrapper>* {
-    padding: 10px;
-    flex: 1 100%;
-  }
+}
 
-  .header {
-    background-color: rgb(106, 238, 106);
-  }
+.bl3 {
 
-  .footer {
-    background-color: rgb(106, 238, 106);
-    position: fixed;
-    bottom: 0;
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+}
+.stopka {
+  background-color: rgb(106, 238, 106);
+  position: fixed;
+  padding: 15px;
+    bottom: 1px;
     left: 0;
     right: 0;
     height: 20px;
-  }
+}
 
-  .main {
-    text-align: left;
-    background-color: #b1b1b1;
-    text-align: justify;
-  }
+/* Nieodwiedzony link */
+a:link {
+  color: green;
+  text-decoration: none;
+}
 
-  .aside-1 {
-    background-color: #c2c2c2;
-  }
+/* Odwiedzony link */
+a:visited {
+  color: green;
+  text-decoration: none;
+}
 
-  /* Nieodwiedzony link */
-  a:link {
-    color: green;
-    text-decoration: none;
-  }
-
-  /* Odwiedzony link */
-  a:visited {
-    color: green;
-    text-decoration: none;
-  }
-
-  /* Najechany link */
-  a:hover {
-    color: red;
-    text-decoration: none;
-  }
-
-  .aside-2 {
-    background-color: #c2c2c2;
-  }
-
-  @media all and (min-width: 600px) {
-    .aside {
-      flex: 1 0 0;
-    }
-  }
-
-  @media all and (min-width: 800px) {
-    .main {
-      flex: 3 0px;
-    }
-
-    .aside-1 {
-      order: 1;
-    }
-
-    .main {
-      order: 2;
-    }
-
-    .aside-2 {
-      order: 3;
-    }
-
-    .footer {
-      order: 4;
-    }
-  }
-
-  body {
-    padding: 2em;
-  }
-
-  span {
+/* Najechany link */
+a:hover {
   color: red;
-  }
+  text-decoration: none;
+}
+
+span {
+  color: red;
 }
