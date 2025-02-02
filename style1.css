@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(106, 238, 106);
+}
+.header {
+    border: 1px solid #4FB3BF;
+    padding: 5px;
+
+}
+.kolumny {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    box-shadow: 10px 10px 7px DimGray;
+}
+.plakat {
+    font-family: TrueType;
+    background-image: url('tlo.png')
+}
