@@ -1,5 +1,5 @@
 body {
-    background-color: #055502;
+    background-color: #8b82f1;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -21,7 +21,7 @@ h1 {
 }
 
 .container {
-    background-image: url('logozhp.png');
+    background-image: url('.png');
     background-repeat: repeat;
     background-size: cover;
     padding: 10px;
@@ -35,10 +35,10 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('path_to_watermark.png');
+    background-image: url('logozhp.png');
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.5;
+    opacity: 0.1;
     z-index: 1;
 }
 
